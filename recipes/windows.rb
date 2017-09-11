@@ -14,7 +14,7 @@ directory node['pull-chef-essentials-cookbooks']['windows_target_cookbook_dir'] 
 end
 
 git 'C:\temp\chef-essentials-windows-repo' do
-  repository 'https://github.com/chef-training/chef-essentials-windows-repo.git'
+  repository node['pull-chef-essentials-cookbooks']['windows_repo']
   revision 'master'
   action :sync
 end

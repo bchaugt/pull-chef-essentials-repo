@@ -14,7 +14,7 @@ directory node['pull-chef-essentials-cookbooks']['linux_target_cookbook_dir'] do
 end
 
 git '/tmp/chef-essentials-repo' do
-  repository 'https://github.com/chef-training/chef-essentials-repo.git'
+  repository node['pull-chef-essentials-cookbooks']['linux_repo']
   revision 'master'
   action :sync
 end
