@@ -16,12 +16,13 @@ platforms:
       elevated: true
       username: Administrator
       password: Cod3Can!
+  - name: centos-7.3
 
 suites:
   - name: default
     run_list:
       # Replace with the name of the COOKBOOK
-      - recipe[pull-essentials-windows-repo::default]
+      - recipe[pull-chef-essentials-cookbooks::default]
     verifier:
       inspec_tests:
         - test/smoke/default

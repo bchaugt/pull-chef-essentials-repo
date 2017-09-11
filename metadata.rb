@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures pull-chef-essentials-cookbooks'
 long_description 'Installs/Configures ppull-chef-essentials-cookbooks'
-version '0.1.0'
+version '0.2.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 depends 'git', '~> 6.0.0'
 
