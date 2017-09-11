@@ -1,6 +1,6 @@
 # pull-chef-essentials-cookbooks Cookbook
 
-Simple cookbook that will pull down the completed Chef Essentials - Windows training cookbooks and copy them over to the specified user cookbook directory (as defined by an attribute).
+Simple cookbook that will pull down the completed Chef Essentials training cookbooks (Windows or Linux) and copy them over to the specified user cookbook directory (as defined by an attribute).
 
 # Attributes
 
