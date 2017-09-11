@@ -1,11 +1,12 @@
-name 'pull-essentials-windows-repo'
+name 'pull-chef-essentials-cookbooks'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures pull-essentials-windows-repo'
-long_description 'Installs/Configures pull-essentials-windows-repo'
+description 'Installs/Configures pull-chef-essentials-cookbooks'
+long_description 'Installs/Configures ppull-chef-essentials-cookbooks'
 version '0.1.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
+depends 'git', '~> 6.0.0'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when

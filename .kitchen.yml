@@ -4,21 +4,23 @@ driver:
 
 provisioner:
   name: chef_zero
-  # You may wish to disable always updating cookbooks in CI or other testing environments.
-  # For example:
-  #   always_update_cookbooks: <%= !ENV['CI'] %>
-  always_update_cookbooks: true
 
 verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
-  - name: centos-7.3
+  - name: windows-2012r2
+    driver:
+      box: mwrock/Windows2012R2
+    transport:
+      elevated: true
+      username: Administrator
+      password: Cod3Can!
 
 suites:
   - name: default
     run_list:
+      # Replace with the name of the COOKBOOK
       - recipe[pull-essentials-windows-repo::default]
     verifier:
       inspec_tests:
